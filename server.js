@@ -31,27 +31,37 @@ app.listen(PORT, () => {
 // We use package:
 
 //npm install dotenv
-
-
 //In server:
-
 require("dotenv").config();
 console.log(process.env.PORT);
 
-
 //Why?
-
 // 1 Hide passwords
-
 // 2 Change environment easily
-
 // 3 Secure configuration
 
 //what is listen()
 app.listen(5000)
 //It starts the server
 // It tells server to listen for requests on a port
-
 //Without listen() → Server will not run.
+
+// what is express?
+//express is a Node.js web framework used to build:
+//Web servers
+//APIs
+//Backend applications
+//It simplifies routing and handling HTTP requests.
+
+//why we use express?
+//Without Express (using Node http module):
+//const http = require("http");
+//It becomes long and complex.
+//With Express:
+//Easy routing
+//Middleware support
+//Clean structure
+//Faster development
+//REST API building easy
 
 
